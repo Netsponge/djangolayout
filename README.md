@@ -109,3 +109,24 @@ If everything is working well, you can commit changes
 
 git add . && git commit -m "project ready"
 ```
+
+## Create templates folder
+
+This folder add to your files structure your HTML'S for your views
+
+After the folder apparing, add new file to your TEMPLATES folder and create a new file named -> main, or `index.html`.
+
+For create the structure of your HTML fastly, use this trick -> write - `!` - and press Enter, your HTML structure is ready.
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+```
