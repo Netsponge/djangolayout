@@ -183,3 +183,74 @@ urlpatterns = [
 
 ```
 git add . && git commit -m "add html imports"
+```
+
+## Create a folder name called "static/css" and add in the folder a css file `style.css`
+Put a simply css like this.
+````
+
+* {
+margin: 0;
+padding: 0%;
+box-sizing: border-box;
+
+}
+
+
+body {
+    min-height: 100vh;
+    display:grid;
+    place-content: center;
+    font-size: 3rem;
+    background-color: slategray;
+    color: whitesmoke;
+}
+
+h1 {
+text-align: center;
+
+}
+````
+## Commit 
+```
+git add . && git commit -m "django first files"
+```
+
+
+
+
+## Create a Layout file.
+
+The Layout file html defined template inheritence.
+Load the css file with `{% load static %}`and by ` {% block %}` ` {% endblock %}`
+
+
+```
+<!DOCTYPE html>
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+    {% block %}
+        Django App
+    {% endblock %}
+    
+    </title>
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+    <a href="/">🏡</a> 
+    <a href="/about">👀</a> 
+    <a href="/">📰</a> 
+    <main>
+    {% block content %}
+    {% endblock %}
+    </main>
+    </nav>
+</body>
+</html>
