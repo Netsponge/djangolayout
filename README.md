@@ -153,12 +153,33 @@ Add a text in the body and links `<p>About<a href="/">about</a></p>`  `<p>Go to 
 
 For a view rendering you need to include the imports of the HTML.
 
-Go to Views folder, and add the Import.
+Go to Views file, and add the Import.
 
 ```
+
 from django.http import HttpResponse
 
 
 def homepage(request):
         return HttpResponse("Hello-World.")
+
+def about(request):
+        return HttpResponse("About.")
+
 ```
+And go to Url's file, and add the Url's.
+
+```
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('',views.homepage,),
+    path('about/', views.about),
+    path('posts/', include.posts.urls),
+
+```
+
+## it's time to commit
+
+```
+git add . && git commit -m "add html imports"
