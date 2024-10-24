@@ -65,7 +65,7 @@ git add . && git commit -m "django first files"
 
 Inside settings.py, add localhost to the list of allowed hosts, like this :
 
-```py
+
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 ```
 
