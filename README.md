@@ -11,5 +11,7 @@ py -V
 # 3.10.0
 ```
 
-postgresql 16+ must be up and running
+postgresql 16+ must be up and running on your machine with `pg_ctl status` (Windows), or `pgrep -l postgres` (Mac), or `sudo systemctl status postgresql` (Linux)
+
+
 
