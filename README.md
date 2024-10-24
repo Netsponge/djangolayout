@@ -31,3 +31,10 @@ Add the following .gitignore
 *.sqlite3
 __pycache__
 ```
+
+## Add your folder to your git 
+
+```shell
+git init
+git add . && git commit -m "first commit"
+```
