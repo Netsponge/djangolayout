@@ -118,7 +118,7 @@ After the folder apparing, add new file to your TEMPLATES folder and create a ne
 
 For create the structure of your HTML fastly, use this trick -> write - `!` - and press Enter, your HTML structures is ready.
 
-Add a text in the body to see your text message later.
+Add a text in the body and links `<p>About<a href="/">about</a></p>`  `<p>Go to Home<a href="/">Home</a>page.</p>` to see later the interaction of your link page.
 
 ```
 <!DOCTYPE html>
@@ -130,6 +130,7 @@ Add a text in the body to see your text message later.
 </head>
 <body>
     <h1>Hello-World</h1>
+    <p>About<a href="/">about</a></p>
 </body>
 </html>
 ```
@@ -143,6 +144,7 @@ Add a text in the body to see your text message later.
 </head>
 <body>
     <h1>About Us</h1>
+    <p>Go to Home<a href="/">Home</a>page.</p>
 </body>
 </html>
 ```
