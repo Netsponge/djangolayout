@@ -96,3 +96,16 @@ py manage.py migrate
 Create a super user, just enter the following command and enter some realistic values when asked :
 
 ```py manage.py createsuperuser```
+
+## Run local server ##
+```
+py manage.py runserver
+```
+Now open your browser at localhost:8000/admin and log in with the credentials of the super user you just created.
+
+## Commit
+```
+If everything is working well, you can commit changes
+
+git add . && git commit -m "project ready"
+```
