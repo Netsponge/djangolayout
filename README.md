@@ -117,6 +117,8 @@ This folder add to your files structure your HTML'S for your views
 After the folder apparing, add new file to your TEMPLATES folder and create a new file named -> main, or `index.html`.
 
 For create the structure of your HTML fastly, use this trick -> write - `!` - and press Enter, your HTML structure is ready.
+
+Add a text in the body to see your text message later.
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -126,7 +128,9 @@ For create the structure of your HTML fastly, use this trick -> write - `!` - an
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Hello There :-)</h1>
 </body>
 </html>
 ```
+
+
