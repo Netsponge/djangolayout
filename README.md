@@ -114,9 +114,9 @@ git add . && git commit -m "project ready"
 
 This folder add to your files structure your HTML'S for your views
 
-After the folder apparing, add new file to your TEMPLATES folder and create a new file named -> main, or `index.html`.
+After the folder apparing, add new file to your TEMPLATES folder and create a new files named -> `Home.html` and `About.hmtl`.
 
-For create the structure of your HTML fastly, use this trick -> write - `!` - and press Enter, your HTML structure is ready.
+For create the structure of your HTML fastly, use this trick -> write - `!` - and press Enter, your HTML structures is ready.
 
 Add a text in the body to see your text message later.
 
@@ -126,13 +126,27 @@ Add a text in the body to see your text message later.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
     <h1>Hello-World</h1>
 </body>
 </html>
 ```
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <h1>About Us</h1>
+</body>
+</html>
+```
+
 ## Import HTTP response for views
 
 For a view rendering you need to include the imports of the HTML.
