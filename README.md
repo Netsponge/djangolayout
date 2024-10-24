@@ -119,6 +119,7 @@ After the folder apparing, add new file to your TEMPLATES folder and create a ne
 For create the structure of your HTML fastly, use this trick -> write - `!` - and press Enter, your HTML structure is ready.
 
 Add a text in the body to see your text message later.
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -128,9 +129,20 @@ Add a text in the body to see your text message later.
     <title>Document</title>
 </head>
 <body>
-    <h1>Hello There :-)</h1>
+    <h1>Hello-World</h1>
 </body>
 </html>
 ```
+## Import HTTP response for views
+
+For a view rendering you need to include the imports of the HTML.
+
+Go to Views folder, and add the Import.
+
+```
+from django.http import HttpResponse
 
 
+def homepage(request):
+        return HttpResponse("Hello-World.")
+```
