@@ -254,3 +254,4 @@ Load the css file with `{% load static %}`and by ` {% block %}` ` {% endblock %}
     </nav>
 </body>
 </html>
+```
