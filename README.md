@@ -46,3 +46,9 @@ py -m venv .venv
 source .venv/bin/activate
 ```
 
+## Install django and pg driver
+
+```shell
+py -m pip install django psycopg2-binary
+```
+
