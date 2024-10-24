@@ -12,3 +12,4 @@ py -V
 ```
 
 postgresql 16+ must be up and running
+.
