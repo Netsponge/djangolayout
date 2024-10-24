@@ -38,3 +38,11 @@ __pycache__
 git init
 git add . && git commit -m "first commit"
 ```
+
+## Create virtual environment for Python and activate it
+
+```shell
+py -m venv .venv
+source .venv/bin/activate
+```
+
