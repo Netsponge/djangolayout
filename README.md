@@ -59,3 +59,27 @@ Below, "core" means the core of our app, "." means build skeleton inside the cur
 ```shell
 django-admin startproject core .
 git add . && git commit -m "django first files"
+
+
+## Change settings.py
+
+Inside settings.py, add localhost to the list of allowed hosts, like this :
+
+```py
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+```
+
+And database settings like this :
+
+```py
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'webplus',
+        'USER': 'webplususer',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+```
