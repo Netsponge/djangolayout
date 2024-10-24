@@ -21,3 +21,13 @@ Git
 ```shell
 mkdir your project && cd your project
 ```
+
+## Add .gitignore and start git
+
+Add the following .gitignore
+
+```shell
+.venv
+*.sqlite3
+__pycache__
+```
