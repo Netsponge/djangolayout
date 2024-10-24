@@ -88,6 +88,11 @@ DATABASES = {
 ## Django comes with default tables (to manage users and authorizations notably), so let's inject them into our new db :
 
 ```
-py manage.py makemigrations
-py manage.py migrate
+py manage.py makemigrations 
+py manage.py migrate 
 ```
+
+## Create a superadmin locally
+Create a super user, just enter the following command and enter some realistic values when asked :
+
+```py manage.py createsuperuser```
