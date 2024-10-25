@@ -11,15 +11,16 @@ py -V
 # 3.10.0
 ```
 
-postgresql 16+ must be up and running on your machine with `pg_ctl status` (Windows), or `pgrep -l postgres` (Mac), or `sudo systemctl status postgresql` (Linux)
+## Install Git
 
-
-Git 
+```
+git ---v or git -version
+```
 
 ## Create a new folder
 
 ```shell
-mkdir your project && cd your project
+mkdir template && template
 ```
 
 ## Add .gitignore and start git
@@ -32,7 +33,7 @@ Add the following .gitignore
 __pycache__
 ```
 
-## Add your folder to your git 
+## Add your file to your git 
 
 ```shell
 git init
@@ -46,10 +47,10 @@ py -m venv .venv
 source .venv/bin/activate
 ```
 
-## Install django and pg driver
+## Install django 
 
 ```shell
-py -m pip install django psycopg2-binary
+py -m pip install django
 ```
 
 ## Build django skeleton
@@ -59,29 +60,14 @@ Below, "core" means the core of our app, "." means build skeleton inside the cur
 ```shell
 django-admin startproject core .
 git add . && git commit -m "django first files"
-
+```
 
 ## Change settings.py
 
 Inside settings.py, add localhost to the list of allowed hosts, like this :
 
-
+```
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-```
-
-And database settings like this :
-
-```
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'webplus',
-        'USER': 'webplususer',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
 ```
 
 
@@ -91,11 +77,11 @@ DATABASES = {
 py manage.py makemigrations 
 py manage.py migrate 
 ```
+## commit
 
-## Create a superadmin locally
-Create a super user, just enter the following command and enter some realistic values when asked :
-
-```py manage.py createsuperuser```
+```
+git add . && git commit -m "django first files"
+```
 
 ## Run local server ##
 ```
