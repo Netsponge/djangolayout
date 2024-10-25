@@ -89,13 +89,6 @@ py manage.py runserver
 ```
 Now open your browser at localhost:8000
 
-## Commit
-```
-If everything is working well, you can commit changes
-
-git add . && git commit -m "project ready"
-```
-
 ## Create templates folder
 
 This folder add to your files structure your HTML'S for your views
