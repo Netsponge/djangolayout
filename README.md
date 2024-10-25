@@ -87,7 +87,7 @@ git add . && git commit -m "django first files"
 ```
 py manage.py runserver
 ```
-Now open your browser at localhost:8000/admin and log in with the credentials of the super user you just created.
+Now open your browser at localhost:8000
 
 ## Commit
 ```
