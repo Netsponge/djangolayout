@@ -119,11 +119,13 @@ Now open your browser at localhost:8000
 
 This folder add to your files structure your HTML'S for your views
 
-After the folder apparing, add new file to your TEMPLATES folder and create a new files named -> `Home.html` and `About.hmtl`.
-
+After the folder apparing, add new file to your TEMPLATES folder and create a new files named -> `Home.html` 
 For create the structure of your HTML fastly, use this trick -> write - `!` - and press Enter, your HTML structures is ready.
 
-Add a text in the body and links `<p>About<a href="/">about</a></p>`  `<p>Go to Home<a href="/">Home</a>page.</p>` to see later the interaction of your link page.
+Add a text in the body 
+
+ 
+
 
 ```html
 
@@ -156,21 +158,23 @@ from django.http import HttpResponse
 def homepage(request):
         return HttpResponse("Hello-World.")
 
-def about(request):
-        return HttpResponse("About.")
-
 ```
 
 And go to Url's file, and add the Url's.
 
 ```shell
 
+
+from django.contrib import admin
+from django.urls import path, include
+from . import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.homepage,),
-    path('about/', views.about),
-    path('posts/', include.posts.urls),
-
+    path('', views.homepage,),
+]
+    
+      
 ```
 
 ## commit
@@ -196,7 +200,8 @@ in your templates folder add `layout.html` and create new html squeleton.
 </head>
 <body>
     <h1>Hello-World</h1>
-   
+   {% block content %}
+   {% endblock %}
 </body>
 </html>
 
