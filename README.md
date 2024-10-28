@@ -254,3 +254,10 @@ git add . && git commit -m "add layout"
 
 ```
 
+## commit
+
+```shell
+
+git add . && git commit -m "routes"
+
+```
