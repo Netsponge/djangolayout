@@ -148,7 +148,7 @@ def about(request):
 ```
 And go to Url's file, and add the Url's.
 
-```
+```shell
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -162,11 +162,13 @@ urlpatterns = [
 
 ```
 git add . && git commit -m "add html imports"
+
 ```
 
 ## Create a folder name called "static/css" and add in the folder a css file `style.css`
 Put a simply css like this.
-````
+
+```
 
 * {
 margin: 0;
@@ -189,10 +191,13 @@ h1 {
 text-align: center;
 
 }
-````
-## Commit 
 ```
+
+## Commit 
+
+```shell
 git add . && git commit -m "django first files"
+
 ```
 
 
@@ -204,7 +209,7 @@ The Layout file html defined template inheritence.
 Load the css file with `{% load static %}`and by ` {% block %}` ` {% endblock %}`
 
 
-```
+```html
 <!DOCTYPE html>
 {% load static %}
 <html lang="fr">
@@ -233,4 +238,5 @@ Load the css file with `{% load static %}`and by ` {% block %}` ` {% endblock %}
     </nav>
 </body>
 </html>
+
 ```
