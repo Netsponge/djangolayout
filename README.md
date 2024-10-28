@@ -206,7 +206,7 @@ in your templates folder add `layout.html` and create new html squeleton.
 
 ```shell
 
-git add . && git commit -m "add html imports"
+git add . && git commit -m "add layout"
 
 ```
 
@@ -248,3 +248,4 @@ git add . && git commit -m "add html imports"
 {%% endblock}
 
 ```
+
