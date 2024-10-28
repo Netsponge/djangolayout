@@ -136,23 +136,7 @@ Add a text in the body and links `<p>About<a href="/">about</a></p>`  `<p>Go to 
 </head>
 <body>
     <h1>Hello-World</h1>
-    <p>About<a href="/">about</a></p>
-</body>
-</html>
-
-```
-```html
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-<body>
-    <h1>About Us</h1>
-    <p>Go to Home<a href="/">Home</a>page.</p>
+   
 </body>
 </html>
 
@@ -197,41 +181,24 @@ git add . && git commit -m "add html imports"
 
 ```
 
-## Create a Layout file.
+## create the layout file
 
-The Layout file html defined template inheritence.
-Load the css file with `{% load static %}`and by ` {% block %}` ` {% endblock %}`
-
+in your templates folder add `layout.html` and create new html squeleton.
 
 ```html
 
 <!DOCTYPE html>
-{% load static %}
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>
-
-    {% block %}
-        Django App
-    {% endblock %}
-    
-    </title>
-     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Home</title>
 </head>
 <body>
-    <nav>
-    <a href="/">🏡</a> 
-    <a href="/about">👀</a> 
-    <a href="/">📰</a> 
-    <main>
-    {% block content %}
-    {% endblock %}
-    </main>
-    </nav>
+    <h1>Hello-World</h1>
+   
 </body>
 </html>
 
 ```
+
