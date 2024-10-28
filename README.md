@@ -92,6 +92,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 ## Django comes with default tables (to manage users and authorizations notably), so let's inject them into our new db :
 
+! il est trop tôt pour les migrations de database !
 ```shell
 
 py manage.py makemigrations 
