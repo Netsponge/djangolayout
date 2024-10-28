@@ -7,20 +7,26 @@ This a simple tutorial for django with two HTML files and one layout.
 `py` command should point to python3
 
 ```shell
+
 py -V
 # 3.10.0
+
 ```
 
 ## Install Git
 
 ```
+
 git ---v or git -version
+
 ```
 
 ## Create a new folder
 
 ```shell
+
 mkdir template && template
+
 ```
 
 ## Add .gitignore and start git
@@ -28,29 +34,38 @@ mkdir template && template
 Add the following .gitignore
 
 ```shell
+
 .venv
 *.sqlite3
 __pycache__
+
 ```
 
 ## Add your file to your git 
 
 ```shell
+
 git init
 git add . && git commit -m "first commit"
+
 ```
 
 ## Create virtual environment for Python and activate it
 
 ```shell
+
 py -m venv .venv
 source .venv/bin/activate
+
 ```
+
 
 ## Install django 
 
 ```shell
+
 py -m pip install django
+
 ```
 
 ## Build django skeleton
@@ -58,34 +73,45 @@ py -m pip install django
 Below, "core" means the core of our app, "." means build skeleton inside the current folder :
 
 ```shell
+
 django-admin startproject core .
 git add . && git commit -m "django first files"
+
 ```
 
 ## Change settings.py
 
 Inside settings.py, add localhost to the list of allowed hosts, like this :
 
-```
+```shell
+
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+
 ```
 
 
 ## Django comes with default tables (to manage users and authorizations notably), so let's inject them into our new db :
 
-```
+```shell
+
 py manage.py makemigrations 
 py manage.py migrate 
+
 ```
 ## git commit
 
-```
+```shell
+
 git add . && git commit -m "django first files"
+
 ```
 
 ## Run local server ##
-```
+
+```shell
+
 py manage.py runserver
+
 ```
 Now open your browser at localhost:8000
 
@@ -99,7 +125,8 @@ For create the structure of your HTML fastly, use this trick -> write - `!` - an
 
 Add a text in the body and links `<p>About<a href="/">about</a></p>`  `<p>Go to Home<a href="/">Home</a>page.</p>` to see later the interaction of your link page.
 
-```
+```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,8 +139,10 @@ Add a text in the body and links `<p>About<a href="/">about</a></p>`  `<p>Go to 
     <p>About<a href="/">about</a></p>
 </body>
 </html>
+
 ```
-```
+```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,6 +155,7 @@ Add a text in the body and links `<p>About<a href="/">about</a></p>`  `<p>Go to 
     <p>Go to Home<a href="/">Home</a>page.</p>
 </body>
 </html>
+
 ```
 
 ## Import HTTP response for views
@@ -134,7 +164,7 @@ For a view rendering you need to include the imports of the HTML.
 
 Go to Views file, and add the Import.
 
-```
+```shell
 
 from django.http import HttpResponse
 
@@ -146,6 +176,7 @@ def about(request):
         return HttpResponse("About.")
 
 ```
+
 And go to Url's file, and add the Url's.
 
 ```shell
@@ -158,50 +189,13 @@ urlpatterns = [
 
 ```
 
-## it's time to commit
+## commit
 
-```
+```shell
+
 git add . && git commit -m "add html imports"
 
 ```
-
-## Create a folder name called "static/css" and add in the folder a css file `style.css`
-Put a simply css like this.
-
-```
-
-* {
-margin: 0;
-padding: 0%;
-box-sizing: border-box;
-
-}
-
-
-body {
-    min-height: 100vh;
-    display:grid;
-    place-content: center;
-    font-size: 3rem;
-    background-color: slategray;
-    color: whitesmoke;
-}
-
-h1 {
-text-align: center;
-
-}
-```
-
-## Commit 
-
-```shell
-git add . && git commit -m "django first files"
-
-```
-
-
-
 
 ## Create a Layout file.
 
@@ -210,6 +204,7 @@ Load the css file with `{% load static %}`and by ` {% block %}` ` {% endblock %}
 
 
 ```html
+
 <!DOCTYPE html>
 {% load static %}
 <html lang="fr">
