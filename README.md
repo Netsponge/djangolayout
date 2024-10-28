@@ -202,3 +202,49 @@ in your templates folder add `layout.html` and create new html squeleton.
 
 ```
 
+## commit
+
+```shell
+
+git add . && git commit -m "add html imports"
+
+```
+
+## modify the home.html 
+
+
+**your HTML actually**.
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Hello-World</h1>
+   
+</body>
+</html>
+
+````
+
+**And the new HTML must be look like this**
+
+```
+
+{% extends 'layout.html' %}
+
+{% block title %}
+    home
+{% endblock   %}
+
+{% blockcontent %}
+    <h1>Home<h/1>
+    <p>Hello-World</p>
+{%% endblock}
+
+```
